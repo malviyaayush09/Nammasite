@@ -1,0 +1,329 @@
+<!--
+THESIS: NammaSite is a proof theatre: eight controlled scenes replace the category-default endless agency page and make build-first, pay-after-approval visible immediately.
+OWN-WORLD: mineral or night canvas, graphite or paper type, coral decision signals, teal live-proof signals, folded planes from the supplied logo and a dark projection-room chapter.
+STORY: a Bangalore business owner understands the risk reversal, chooses the problem to solve, inspects the launch toolkit, real sites and price, resolves doubts, then starts with only a business name.
+FIRST VIEWPORT: the promise fills the left half while a live folded website proof occupies the right; both the free-sample action and business-name input are visible without scrolling.
+FORM: an eight-scene native-scroll sequence with a persistent chapter rail and user-controlled light/dark modes, inspired by the references' pacing but composed in NammaSite's own brand grammar.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NammaSite | See your website before you pay</title>
+    <meta name="description" content="NammaSite builds custom websites for Bangalore businesses. See a live sample first, then pay only after you approve it.">
+    <meta name="theme-color" content="#f2f0ea">
+    <script>try{if(localStorage.getItem("nammasite-theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+    <link rel="icon" href="brand_logo/icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500;600;700&family=Bricolage+Grotesque:opsz,wght@10..48,500;10..48,600;10..48,700;10..48,800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="NammaSite home">
+        <img class="brand-light" src="brand_logo/logo-full.png" alt="NammaSite" width="410" height="88">
+        <span class="brand-dark" aria-hidden="true"><img src="brand_logo/icon.png" alt="" width="96" height="110"><strong>nammasite</strong></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#proof">How it works</a>
+        <a href="#fit">Find your fit</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#work">Work</a>
+        <a href="#pricing">Pricing</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-theme-toggle>
+          <span class="theme-glyph theme-sun" aria-hidden="true">☼</span><span class="theme-glyph theme-moon" aria-hidden="true">☾</span><span class="theme-toggle-copy">Dark mode</span>
+        </button>
+        <a class="nav-action" href="https://calendly.com/malviyaayush2609/30min" target="_blank" rel="noopener">Book a call</a>
+      </nav>
+    </header>
+
+    <nav class="chapter-rail" aria-label="Page chapters" data-chapter-rail>
+      <span class="chapter-progress" aria-hidden="true"></span>
+      <a href="#top" data-chapter="top"><span>Start</span></a>
+      <a href="#proof" data-chapter="proof"><span>Proof</span></a>
+      <a href="#fit" data-chapter="fit"><span>Fit</span></a>
+      <a href="#toolkit" data-chapter="toolkit"><span>Toolkit</span></a>
+      <a href="#work" data-chapter="work"><span>Work</span></a>
+      <a href="#pricing" data-chapter="pricing"><span>Price</span></a>
+      <a href="#ask" data-chapter="ask"><span>Ask</span></a>
+      <a href="#start" data-chapter="start"><span>Begin</span></a>
+    </nav>
+
+    <main id="main">
+      <section class="scene hero-scene" id="top" data-scene aria-labelledby="hero-title">
+        <div class="hero-copy" data-scene-copy>
+          <p class="scene-label"><span>Live-proof web studio</span><span>Bangalore</span></p>
+          <h1 id="hero-title">We build it <em>first.</em><br>You decide after.</h1>
+          <p class="hero-lede">A complete custom website for your local business—shown to you live before you pay a rupee.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/917230010700?text=Hi!%20I'd%20like%20to%20see%20a%20free%20sample%20website%20for%20my%20business." target="_blank" rel="noopener">See your free sample <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#proof">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="offer-line" aria-label="Key offer details">
+            <span>No advance</span><span>Live in 48 hours</span><span>Domain + hosting included</span>
+          </div>
+        </div>
+
+        <form class="proof-machine" id="proof-builder" novalidate aria-labelledby="builder-title">
+          <div class="machine-topline">
+            <p id="builder-title">Your live sample</p>
+            <span><i aria-hidden="true"></i> Building preview</span>
+          </div>
+          <div class="proof-preview theme-salon" data-preview-surface>
+            <div class="preview-browser">
+              <div class="browser-bar">
+                <span></span><span></span><span></span>
+                <strong id="preview-url">bloomsalon.in</strong>
+              </div>
+              <div class="preview-copy">
+                <p id="preview-label">Salon & spa</p>
+                <h2 id="preview-name">Bloom Salon</h2>
+                <p id="preview-line">Services, timings, location, WhatsApp booking and Google Maps—composed for local customers.</p>
+                <div class="preview-actions" aria-hidden="true"><span>Services</span><span>Gallery</span><span>Book</span></div>
+              </div>
+            </div>
+            <span class="proof-stamp" aria-hidden="true">Built first</span>
+          </div>
+          <div class="machine-controls">
+            <div class="name-field">
+              <label for="business-name">Business name</label>
+              <div class="input-row">
+                <input id="business-name" name="business-name" type="text" placeholder="e.g. Bloom Salon" maxlength="40" autocomplete="organization" aria-describedby="business-error">
+                <button class="machine-send" type="submit">Send <span aria-hidden="true">↗</span></button>
+              </div>
+              <p class="field-error" id="business-error" role="alert"></p>
+            </div>
+            <fieldset class="trade-field">
+              <legend>Trade</legend>
+              <div class="trade-options">
+                <button type="button" class="trade-option is-active" data-category="salon" aria-pressed="true">Salon</button>
+                <button type="button" class="trade-option" data-category="gym" aria-pressed="false">Gym</button>
+                <button type="button" class="trade-option" data-category="food" aria-pressed="false">Food</button>
+                <button type="button" class="trade-option" data-category="clinic" aria-pressed="false">Clinic</button>
+                <button type="button" class="trade-option" data-category="retail" aria-pressed="false">Retail</button>
+                <button type="button" class="trade-option" data-category="studio" aria-pressed="false">Studio</button>
+              </div>
+            </fieldset>
+          </div>
+          <p class="machine-note">Illustrative preview. Your real sample is hand-built from your business details.</p>
+        </form>
+        <span class="scene-index" aria-hidden="true">01 / 08</span>
+      </section>
+
+      <section class="scene proof-scene" id="proof" data-scene aria-labelledby="proof-title">
+        <div class="proof-heading" data-scene-copy>
+          <p class="scene-label"><span>The risk reversal</span><span>How it works</span></p>
+          <h2 id="proof-title">Our process keeps the risk on our side.</h2>
+          <p>The working link comes before your payment. That changes every step that follows.</p>
+        </div>
+        <ol class="approval-runway" aria-label="NammaSite process">
+          <li>
+            <span class="runway-stop">01</span>
+            <div><h3>We design</h3><p>Share your business name. We research the business and build the sample with the useful details customers look for.</p></div>
+          </li>
+          <li>
+            <span class="runway-stop">02</span>
+            <div><h3>You inspect</h3><p>Open a real working link on your phone or laptop. Review the layout, content, mobile view and contact flow together.</p></div>
+          </li>
+          <li>
+            <span class="runway-stop">03</span>
+            <div><h3>You decide</h3><p>Approve it and choose a plan. If the sample does not fit, there is no payment.</p></div>
+          </li>
+        </ol>
+        <a class="proof-promise" href="#pricing"><span>Live proof</span><strong>before</strong><span>payment</span><i aria-hidden="true">→</i></a>
+        <span class="scene-index" aria-hidden="true">02 / 08</span>
+      </section>
+
+      <section class="scene fit-scene" id="fit" data-scene aria-labelledby="fit-title">
+        <div class="fit-copy" data-scene-copy>
+          <p class="scene-label"><span>Find your fit</span><span>Start with the real need</span></p>
+          <h2 id="fit-title">Different goals.<br><em>One proof-first start.</em></h2>
+          <p>Tell us what needs to change. The page responds with the content order and plan depth that make sense for that goal.</p>
+        </div>
+        <div class="intent-console" data-intent-console>
+          <div class="intent-prompt">
+            <img src="brand_logo/icon.png" alt="" width="96" height="110">
+            <p><span>Before we go further</span><strong>Which situation sounds most like yours?</strong></p>
+          </div>
+          <div class="intent-options" role="group" aria-label="Choose your website goal">
+            <button type="button" class="is-active" data-intent="first" aria-pressed="true">I need my first website</button>
+            <button type="button" data-intent="premium" aria-pressed="false">I need a premium presence</button>
+            <button type="button" data-intent="local" aria-pressed="false">I need local customers to act</button>
+          </div>
+          <article class="intent-result" id="intent-result" aria-live="polite">
+            <div class="intent-result-top"><span id="intent-label">Focused foundation</span><strong id="intent-plan">Starter</strong></div>
+            <h3 id="intent-heading">Put trust and contact details in one clear place.</h3>
+            <p id="intent-body">Lead with services, real photos, timings, location, WhatsApp and Google Maps.</p>
+            <ul id="intent-list"><li>Services</li><li>Real photos</li><li>WhatsApp</li><li>Maps</li></ul>
+            <a id="intent-link" href="#pricing">See the matching plan <span aria-hidden="true">→</span></a>
+          </article>
+          <a class="intent-compare" href="#pricing">Just comparing? View both plans →</a>
+        </div>
+        <span class="scene-index" aria-hidden="true">03 / 08</span>
+      </section>
+
+      <section class="scene toolkit-scene" id="toolkit" data-scene aria-labelledby="toolkit-title">
+        <div class="toolkit-copy" data-scene-copy>
+          <p class="scene-label"><span>The launch toolkit</span><span>Useful by design</span></p>
+          <h2 id="toolkit-title">Every piece has a job after launch.</h2>
+          <p>These are the website ingredients included in NammaSite plans, selected to support contact, discovery and trust.</p>
+        </div>
+        <div class="toolkit-stage" data-toolkit-stage>
+          <article class="tool-core" aria-live="polite">
+            <span id="tool-label">Selected ingredient · All plans</span>
+            <h3 id="tool-title">Mobile-first layout</h3>
+            <p id="tool-body">The phone composition is designed deliberately so headings, images and contact actions remain easy to use.</p>
+          </article>
+          <div class="tool-orbit" role="group" aria-label="Explore launch toolkit">
+            <button type="button" class="tool-orb is-active" data-tool="mobile" aria-pressed="true"><span>Mobile-first</span><small>All plans</small></button>
+            <button type="button" class="tool-orb" data-tool="whatsapp" aria-pressed="false"><span>WhatsApp</span><small>All plans</small></button>
+            <button type="button" class="tool-orb" data-tool="maps" aria-pressed="false"><span>Google Maps</span><small>All plans</small></button>
+            <button type="button" class="tool-orb" data-tool="photos" aria-pressed="false"><span>Real photos</span><small>All plans</small></button>
+            <button type="button" class="tool-orb" data-tool="domain" aria-pressed="false"><span>Domain + hosting</span><small>All plans</small></button>
+            <button type="button" class="tool-orb" data-tool="seo" aria-pressed="false"><span>Basic SEO</span><small>Pro</small></button>
+            <button type="button" class="tool-orb" data-tool="gallery" aria-pressed="false"><span>Gallery</span><small>Pro</small></button>
+            <button type="button" class="tool-orb" data-tool="form" aria-pressed="false"><span>Contact form</span><small>Pro</small></button>
+          </div>
+        </div>
+        <span class="scene-index" aria-hidden="true">04 / 08</span>
+      </section>
+
+      <section class="scene work-scene" id="work" data-scene aria-labelledby="work-title">
+        <div class="work-topline" data-scene-copy>
+          <div>
+            <p class="scene-label"><span>Selected work</span><span>Real project evidence</span></p>
+            <h2 id="work-title">Websites on the big screen.</h2>
+          </div>
+          <p>One project at a time. No stock photography, no invented results.</p>
+        </div>
+        <div class="projector" data-projector>
+          <div class="project-screen">
+            <img id="project-image" src="assets/img/onegen-hero.jpg" alt="OneGen Fitness website screenshot" width="1000" height="459">
+            <span class="screen-glint" aria-hidden="true"></span>
+          </div>
+          <div class="project-caption">
+            <p><span id="project-count">01 / 04</span><span id="project-type">Gym & fitness · RT Nagar</span></p>
+            <h3 id="project-name">OneGen Fitness</h3>
+            <a id="project-link" href="https://onegenfitness.in" target="_blank" rel="noopener">Open live website <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="project-controls" aria-label="Project controls">
+            <button type="button" data-project-prev aria-label="Previous project">←</button>
+            <div class="project-selectors">
+              <button type="button" class="is-active" data-project="0" aria-label="Show OneGen Fitness" aria-pressed="true"></button>
+              <button type="button" data-project="1" aria-label="Show Savoury Sea Shell" aria-pressed="false"></button>
+              <button type="button" data-project="2" aria-label="Show Niramaya Yoga Kuteeram" aria-pressed="false"></button>
+              <button type="button" data-project="3" aria-label="Show Solar Electronics" aria-pressed="false"></button>
+            </div>
+            <button type="button" data-project-next aria-label="Next project">→</button>
+          </div>
+        </div>
+        <span class="scene-index" aria-hidden="true">05 / 08</span>
+      </section>
+
+      <section class="scene pricing-scene" id="pricing" data-scene aria-labelledby="pricing-title">
+        <div class="price-intro" data-scene-copy>
+          <p class="scene-label"><span>One-time plans</span><span>Pay after approval</span></p>
+          <h2 id="pricing-title">Choose the room your business needs.</h2>
+          <p>Both current offers include design, a free .in domain and hosting. The difference is how much space the website needs.</p>
+          <div class="price-axis" aria-hidden="true"><span>Focused</span><i></i><span>Expanded</span></div>
+        </div>
+        <div class="price-balance">
+          <article class="plan-sheet starter-plan">
+            <div class="plan-top"><p>Starter</p><strong>₹7,999</strong></div>
+            <p>For a clear one-page presence that helps people find, understand and contact you.</p>
+            <ul><li>Single-page website</li><li>Mobile optimised</li><li>WhatsApp + Google Maps</li><li>Services and photos</li><li>Live in 48 hours</li><li>Free .in domain</li></ul>
+            <a class="button button-outline" href="https://wa.me/917230010700?text=Hi!%20I'm%20interested%20in%20the%20Starter%20website%20(%E2%82%B97%2C999)." target="_blank" rel="noopener">Start with Starter <span aria-hidden="true">↗</span></a>
+          </article>
+          <div class="balance-promise"><span>No advance</span><strong>Same trust.<br>Different depth.</strong><small>No monthly fees listed. Year-two domain renewal is separate.</small></div>
+          <article class="plan-sheet pro-plan">
+            <span class="popular-mark">Most popular</span>
+            <div class="plan-top"><p>Pro</p><strong>₹11,999 <del>₹14,000</del></strong></div>
+            <p>For a larger story with separate pages, portfolio space and extra launch support.</p>
+            <ul><li>Home, Services, About, Contact</li><li>Gallery or portfolio</li><li>Contact form + basic SEO</li><li>Google Business profile help</li><li>Free .in domain</li><li>1 month free support</li></ul>
+            <a class="button button-primary" href="https://wa.me/917230010700?text=Hi!%20I'm%20interested%20in%20the%20Pro%20website%20(%E2%82%B911%2C999)." target="_blank" rel="noopener">Start with Pro <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <span class="scene-index" aria-hidden="true">06 / 08</span>
+      </section>
+
+      <section class="scene ask-scene" id="ask" data-scene aria-labelledby="ask-title">
+        <div class="founder-note" data-scene-copy>
+          <p class="scene-label"><span>The people building it</span><span>Bangalore</span></p>
+          <h2 id="ask-title">A small team you speak with directly.</h2>
+          <blockquote>“We built the studio around one promise: if the website does not earn your trust, you do not pay.”</blockquote>
+          <div class="founder-pair" aria-label="NammaSite founders">
+            <figure><img src="assets/img/siddhanth.jpg" alt="Siddhanth B" loading="lazy" width="320" height="320"><figcaption><strong>Siddhanth B</strong><span>Founder · Bangalore</span></figcaption></figure>
+            <figure><img src="assets/img/ayush.jpg" alt="Ayush Malviya" loading="lazy" width="320" height="320"><figcaption><strong>Ayush Malviya</strong><span>Founder · Bangalore</span></figcaption></figure>
+          </div>
+        </div>
+        <div class="answer-console" aria-labelledby="questions-title">
+          <p class="console-label" id="questions-title">Quick answers</p>
+          <div class="question-buttons">
+            <button type="button" class="is-active" aria-pressed="true" data-faq-answer="Only after you see the live website and approve it. NammaSite builds first, you review, and only then you pay. Zero advance.">When do I pay?</button>
+            <button type="button" aria-pressed="false" data-faq-answer="The current public launch promise is 48 hours from confirmation.">How long does it take?</button>
+            <button type="button" aria-pressed="false" data-faq-answer="To start, send only your business name. Services, timings, location and real photos can follow after the sample direction feels right.">What do you need?</button>
+            <button type="button" aria-pressed="false" data-faq-answer="Current public copy lists no monthly fee. It lists domain renewal separately from year two at ₹1,200 per year.">Any monthly fee?</button>
+            <button type="button" aria-pressed="false" data-faq-answer="You do not pay. The sample is taken down and the engagement ends there.">What if I dislike it?</button>
+            <button type="button" aria-pressed="false" data-faq-answer="Starter is a focused one-page website. Pro adds separate pages, gallery or portfolio, contact form, basic SEO, Google Business profile help and one month of support.">Starter or Pro?</button>
+          </div>
+          <div class="answer-panel" id="faq-answer" aria-live="polite">
+            <span>Answer 01</span>
+            <p>Only after you see the live website and approve it. NammaSite builds first, you review, and only then you pay. Zero advance.</p>
+          </div>
+          <button class="text-link console-more" type="button" data-open-questions>Open all quick questions <span aria-hidden="true">↗</span></button>
+        </div>
+        <span class="scene-index" aria-hidden="true">07 / 08</span>
+      </section>
+
+      <section class="scene start-scene" id="start" data-scene aria-labelledby="start-title">
+        <div class="start-copy" data-scene-copy>
+          <p class="scene-label"><span>Your first step</span><span>No payment</span></p>
+          <h2 id="start-title">Your business name is enough to begin.</h2>
+          <p>Send it on WhatsApp and NammaSite will start the free sample direction. You can add services, timings and photos after you like where it is going.</p>
+          <form class="start-form" id="cta-form" novalidate>
+            <label for="cta-business">Business name</label>
+            <div class="input-row">
+              <input id="cta-business" name="cta-business" type="text" placeholder="Your business name" maxlength="40" autocomplete="organization" aria-describedby="cta-error">
+              <button class="button button-primary" type="submit">Start on WhatsApp <span aria-hidden="true">↗</span></button>
+            </div>
+            <p class="field-error" id="cta-error" role="alert"></p>
+          </form>
+          <div class="start-links">
+            <a href="https://wa.me/917230010700" target="_blank" rel="noopener">+91 72300 10700</a>
+            <a href="https://wa.me/919663933763" target="_blank" rel="noopener">+91 96639 33763</a>
+            <a href="https://calendly.com/malviyaayush2609/30min" target="_blank" rel="noopener">Book a 30-min call</a>
+          </div>
+        </div>
+        <div class="closing-mark" aria-hidden="true"><img src="brand_logo/icon.png" alt="" width="96" height="110"><span>Built first.</span><span>Paid after.</span></div>
+        <footer class="site-footer"><p>© 2026 NammaSite · Bangalore, India</p><a href="#top">Back to start ↑</a></footer>
+        <span class="scene-index" aria-hidden="true">08 / 08</span>
+      </section>
+    </main>
+
+    <button class="quick-launcher" type="button" aria-haspopup="dialog" aria-controls="quick-dialog">Q&amp;A</button>
+    <dialog class="quick-dialog" id="quick-dialog" aria-labelledby="quick-title">
+      <div class="dialog-head"><div><p class="scene-label"><span>NammaSite answers</span></p><h2 id="quick-title">Ask before you start.</h2></div><button class="dialog-close" type="button" aria-label="Close quick answers">Close</button></div>
+      <div class="quick-questions" aria-label="Quick question buttons">
+        <button type="button" data-answer="Starter is ₹7,999 and Pro is ₹11,999. Current public copy says design, a free .in domain and hosting are included.">How much does it cost?</button>
+        <button type="button" data-answer="The current public launch promise is 48 hours from confirmation.">How long does it take?</button>
+        <button type="button" data-answer="NammaSite builds first and sends a live link. You pay only after you approve the website.">How does paying later work?</button>
+        <button type="button" data-answer="To start, send your business name. Photos, timings and services can follow after you like the sample.">What do you need from me?</button>
+      </div>
+      <p class="quick-answer" id="quick-answer" aria-live="polite">Choose a question, or send your business name to start a free sample.</p>
+      <form class="dialog-form" id="dialog-form" novalidate>
+        <label for="dialog-business">Business name</label>
+        <div class="input-row"><input id="dialog-business" name="dialog-business" type="text" placeholder="e.g. Green Leaf Clinic" maxlength="40" autocomplete="organization" aria-describedby="dialog-error"><button class="button button-primary" type="submit">Send <span aria-hidden="true">↗</span></button></div>
+        <p class="field-error" id="dialog-error" role="alert"></p>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>

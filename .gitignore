@@ -1,0 +1,8 @@
+dist/
+node_modules/
+.playwright-mcp/
+.impeccable/
+nammasite-source.html
+*.log
+.DS_Store
+Thumbs.db
