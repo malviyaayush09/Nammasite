@@ -9,7 +9,9 @@ const files = [
   "styles.css",
   "script.js",
   "brand_logo",
-  "assets"
+  "assets",
+  "robots.txt",
+  "sitemap.xml"
 ];
 
 await rm(dist, { recursive: true, force: true });

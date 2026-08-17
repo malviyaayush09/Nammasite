@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NammaSite — Open Graph share card</title>
+<!-- The 1200x630 card that renders when nammasite.co.in is shared on
+     WhatsApp, LinkedIn or Facebook — which is how most outreach actually
+     goes out, so it is worth building rather than pointing og:image at a
+     page screenshot.
+
+     Uses the site's own typefaces and palette so the card and the page are
+     obviously the same brand. Exported by scripts/export-og.mjs (Playwright)
+     to assets/img/og-nammasite.jpg. JPEG because WhatsApp's preview fetcher
+     is the fussiest of the lot. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500;600&family=Bricolage+Grotesque:opsz,wght@10..48,600;10..48,700;10..48,800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#102728; --canvas:#f2f0ea; --white:#fffdf8;
+    --coral:#f06455; --teal:#35afaa; --apricot:#f6a56d;
+    --display:"Bricolage Grotesque",system-ui,sans-serif;
+    --body:"Source Sans 3",system-ui,sans-serif;
+    --mono:"Azeret Mono",ui-monospace,monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box} *{margin:0}
+  body{background:var(--night)}
+
+  .og{
+    position:relative; width:1200px; height:630px; overflow:hidden;
+    background:var(--night); color:var(--white); font-family:var(--body);
+    padding:76px 80px; display:flex; flex-direction:column;
+  }
+  /* a soft teal bloom so the ground is not a flat rectangle */
+  .og::before{
+    content:""; position:absolute; right:-140px; top:-160px;
+    width:640px; height:640px; border-radius:50%;
+    background:radial-gradient(circle, rgba(53,175,170,.32), rgba(53,175,170,0) 68%);
+  }
+  .og > *{position:relative}
+
+  .og__logo{width:340px; height:auto}          /* 807px native — downscaled */
+
+  .og__line{
+    margin-top:auto;
+    font-family:var(--display); font-weight:700;
+    font-size:76px; line-height:1.04; letter-spacing:-.02em;
+    max-width:17ch;
+  }
+  .og__line em{font-style:normal; color:var(--coral)}
+
+  .og__sub{
+    margin-top:24px; font-size:25px; line-height:1.45;
+    color:rgba(255,253,248,.76); max-width:44ch;
+  }
+
+  .og__foot{
+    margin-top:40px; padding-top:24px;
+    border-top:1px solid rgba(255,253,248,.16);
+    display:flex; gap:34px; align-items:center;
+    font-family:var(--mono); font-size:17px; letter-spacing:.06em;
+    text-transform:uppercase; color:rgba(255,253,248,.62);
+  }
+  .og__foot b{color:var(--teal); font-weight:600}
+</style>
+</head>
+<body>
+<section class="og" id="og">
+  <img class="og__logo" src="../brand_logo/logo-full.png" alt="">
+  <p class="og__line">See your website <em>before</em> you pay.</p>
+  <p class="og__sub">Custom-built sites for Bangalore businesses — we build a live sample first, you pay only once you approve it.</p>
+  <p class="og__foot"><b>nammasite.co.in</b><span>Bengaluru</span><span>No advance</span></p>
+</section>
+</body>
+</html>
