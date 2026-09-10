@@ -67,6 +67,31 @@
 
   const projects = [
     {
+      name: "AZDAH",
+      type: "Booking & membership platform · New Thippasandra",
+      // Not a website. This one is the whole system the studio runs on, and the
+      // caption has to say so or it reads as another five-page brochure.
+      note: "Class schedule, member logins, online payments, packs and credits, waitlists, rescheduling and a full admin panel.",
+      image: "assets/img/azdah-hero.webp",
+      alt: "AZDAH pole studio booking platform",
+      url: "https://www.azdah.in",
+      linkLabel: "Open live platform"
+    },
+    {
+      name: "Arsu Bespoke Studio",
+      type: "Bespoke tailoring · RMV 2nd Stage",
+      image: "assets/img/arsu-hero.webp",
+      alt: "Arsu Bespoke Studio website",
+      url: "https://arsubespokestudio.com"
+    },
+    {
+      name: "Kalaarnavaa",
+      type: "Classical dance & music academy · Banashankari",
+      image: "assets/img/kalaarnavaa-hero.webp",
+      alt: "Kalaarnavaa performing arts academy website",
+      url: "https://www.kalaarnavaa.com"
+    },
+    {
       name: "OneGen Fitness",
       type: "Gym & fitness · RT Nagar",
       image: "assets/img/onegen-hero.jpg",
@@ -75,6 +100,7 @@
     },
     {
       name: "Savoury Sea Shell",
+      demo: true,
       type: "Coastal kitchen · BTM Layout",
       image: "assets/img/savoury-hero.jpg",
       alt: "Savoury Sea Shell website screenshot",
@@ -82,6 +108,7 @@
     },
     {
       name: "Niramaya Yoga Kuteeram",
+      demo: true,
       type: "Yoga · Basavanagudi",
       image: "assets/img/niramaya-hero.jpg",
       alt: "Niramaya Yoga Kuteeram website screenshot",
@@ -89,6 +116,7 @@
     },
     {
       name: "Solar Electronics",
+      demo: true,
       type: "Electronics · SP Road",
       image: "assets/img/solar-hero.jpg",
       alt: "Solar Electronics website screenshot",
@@ -442,6 +470,7 @@
     const count = byId("project-count");
     const type = byId("project-type");
     const name = byId("project-name");
+    const note = byId("project-note");
     const link = byId("project-link");
     const selectors = Array.from(document.querySelectorAll("[data-project]"));
     const previous = document.querySelector("[data-project-prev]");
@@ -462,7 +491,16 @@
         count.textContent = `${String(active + 1).padStart(2, "0")} / ${String(projects.length).padStart(2, "0")}`;
         type.textContent = project.type;
         name.textContent = project.name;
+        // Only AZDAH carries a note so far -- the others are websites and the
+        // name says enough. Hidden rather than empty, so the caption does not
+        // reserve a blank line on every other slide.
+        if (note) {
+          note.textContent = project.note || "";
+          note.hidden = !project.note;
+        }
         link.href = project.url;
+        link.firstChild.textContent = (project.linkLabel
+          || (project.demo ? "View sample design" : "Open live website")) + " ";
         selectors.forEach((selector, selectorIndex) => {
           const selected = selectorIndex === active;
           selector.classList.toggle("is-active", selected);
