@@ -97,8 +97,18 @@
       image: "assets/img/onegen-hero.jpg",
       alt: "OneGen Fitness website screenshot",
       url: "https://onegenfitness.in"
+    },
+    {
+      name: "Marseli",
+      type: "Website care & maintenance · HSR Layout",
+      // Built by someone else. Saying so is the point: it is the only entry
+      // here that is takeover work, and the numbers are why it belongs.
+      note: "Built by another developer and taken into monthly care. Photographs cut from 980 MB to 15 MB, and the slowest pages went from about 15 seconds to under four.",
+      image: "assets/img/marseli-hero.webp",
+      alt: "Marseli cafe and patisserie website",
+      url: "https://marselicafe.com"
     }
-];
+  ];
 
   const intents = {
     first: {
