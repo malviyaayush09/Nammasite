@@ -97,32 +97,8 @@
       image: "assets/img/onegen-hero.jpg",
       alt: "OneGen Fitness website screenshot",
       url: "https://onegenfitness.in"
-    },
-    {
-      name: "Savoury Sea Shell",
-      demo: true,
-      type: "Coastal kitchen · BTM Layout",
-      image: "assets/img/savoury-hero.jpg",
-      alt: "Savoury Sea Shell website screenshot",
-      url: "https://demo.nammasite.co.in/savoury-sea-shell/"
-    },
-    {
-      name: "Niramaya Yoga Kuteeram",
-      demo: true,
-      type: "Yoga · Basavanagudi",
-      image: "assets/img/niramaya-hero.jpg",
-      alt: "Niramaya Yoga Kuteeram website screenshot",
-      url: "https://demo.nammasite.co.in/niramaya-yoga/"
-    },
-    {
-      name: "Solar Electronics",
-      demo: true,
-      type: "Electronics · SP Road",
-      image: "assets/img/solar-hero.jpg",
-      alt: "Solar Electronics website screenshot",
-      url: "https://demo.nammasite.co.in/solar-electronics/"
     }
-  ];
+];
 
   const intents = {
     first: {
@@ -499,8 +475,7 @@
           note.hidden = !project.note;
         }
         link.href = project.url;
-        link.firstChild.textContent = (project.linkLabel
-          || (project.demo ? "View sample design" : "Open live website")) + " ";
+        link.firstChild.textContent = (project.linkLabel || "Open live website") + " ";
         selectors.forEach((selector, selectorIndex) => {
           const selected = selectorIndex === active;
           selector.classList.toggle("is-active", selected);

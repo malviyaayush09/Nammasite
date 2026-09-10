@@ -10,3 +10,4 @@ Thumbs.db
 # Cloudflare deploy bundle — rebuilt on demand, not source.
 NammaSite-Cloudflare.zip
 *.zip
+.gstack/
